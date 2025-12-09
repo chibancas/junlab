@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+h2 {
+    @apply text-2xl w-full text-center;
+}
+
+article{
+    @apply p-4
+    bg-linear-to-tr from-zinc-200 via-gray-400 to-lime-500
+    rounded-2xl
+}
+p{
+    @apply text-justify
+}
+
+h3{
+    @apply text-center text-xl p-3.5
+}
+
+img{
+    @apply
+    mx-auto p-2.5 rounded-3xl
+}
