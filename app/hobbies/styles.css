@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.hobbies section article{
+    @apply
+    bg-linear-to-b from-green-400 via-gray-300 to-neutral-300
+    p-2.5
+    rounded-2xl
+    border-3 border-gray-600
+}
+
+.gaming{
+    @apply
+    grid grid-cols-3
+    place-items-center
+    align-middle justify-center items-center
+}
+
+.hobbies section article h2{
+    @apply text-2xl text-center
+    w-full
+    flex justify-center flex-row
+    gap-5
+}
+
+.hobbies section article h2 svg{
+    @apply text-blue-950 w-6
+}
+
+.hobbies section article p{
+    @apply text-lg text-justify
+}
+
+.hobbies section figure{
+    @apply
+    grid grid-cols-1 place-items-center justify-center
+}
+
+.hobbies section figure img{
+    @apply rounded-xl
+}
+
+.hobbies section figure figcaption{
+    @apply text-center text-lg
+}
+

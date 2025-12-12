@@ -1,11 +1,13 @@
 @import 'tailwindcss';
 
 
-input,textarea{
-    @apply p-2 text-xl rounded-md border-2 border-gray-400;
+.contact input,textarea{
+    @apply p-2 text-xl rounded-md border-2 border-gray-400
+    md:text-2xl
 }
 
-button{
+.contact button{
     @apply p-2 text-xl rounded-xl bg-gray-100/60 hover:bg-gray-200/70 transition
+    md:text-2xl
     border-2 border-blue-500
 }

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import './styles.css'
-import { GitBranch, Linkedin, Mail, Play } from 'lucide-react'
+import { GitBranch, Linkedin, Mail, Play, SquareUserRound } from 'lucide-react'
 export default function Contact() {
     return (
-        <main className='flex flex-col gap-5'>
-            <h1 className='text-3xl text-center'>
+        <main className='contact flex flex-col gap-5'>
+            <h1 className='text-3xl md:text-6xl text-center font-bold'>
                 Let&apos;s get in contact!
+                <SquareUserRound size={60}/>
+                <SquareUserRound className='md:hidden'/>
             </h1>
 
             <form action="/" method='POST'
@@ -22,8 +24,8 @@ export default function Contact() {
                     <span>
                         Yes, I&apos;m agree
                     </span>
-                    <input type="checkbox" name="data-agreement" id="data-agreement" className='m-5'/>
-                    
+                    <input type="checkbox" name="data-agreement" id="data-agreement" className='m-5 md:scale-200' />
+
                 </div>
 
                 <button type="submit">
@@ -32,7 +34,7 @@ export default function Contact() {
             </form>
 
             <section className='flex flex-col'>
-                <h2 className='text-2xl w-full text-center'>
+                <h2 className='text-2xl md:text-3xl w-full text-center'>
                     Also you can find me here!
                 </h2>
 

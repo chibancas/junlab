@@ -11,17 +11,23 @@ body{
   @apply
   flex flex-col gap-2.5 align-middle justify-center p-[1dvh]
   bg-linear-to-bl from-neutral-300 via-stone-400 to-slate-300
+  antialiased min-h-screen
+  /* md:hidden */
+
 }
 
 header{
   @apply
   /* min-h-[20dvh] */
   grid grid-cols-1 justify-center align-middle
+
 }
 .typer{
-  @apply text-4xl w-full text-center font-light underline underline-offset-4 decoration-white decoration-4;
+  @apply text-4xl md:text-6xl
+  w-full text-center font-light underline underline-offset-4 decoration-white decoration-4;
     /* animation: bluePulse 2s infinite ease-in-out; */
 }
+
 @keyframes bluePulse {
   0%   { color: #93C5FD; } /* blue-300 */
   25%  { color: #60A5FA; } /* blue-400 */
@@ -32,11 +38,12 @@ header{
 
 .nav{
   /* @apply flex flex-row flex-wrap justify-center p-2.5 gap-2 */
-  @apply grid grid-cols-2 gap-2 p-2 place-items-center
+  @apply grid grid-cols-2 gap-2 p-2 place-items-center align-middle
 }
 
 a{
   @apply text-center text-2xl w-full
+  md:text-4xl
   p-2 rounded-lg bg-linear-to-br from-gray-300 via-gray-400 to-neutral-400
   border-2 border-gray-500
   hover:bg-linear-to-br hover:from-gray-400 hover:via-gray-500 hover:to-neutral-500

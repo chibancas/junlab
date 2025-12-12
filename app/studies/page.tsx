@@ -1,18 +1,14 @@
-import { School } from "lucide-react";
 import "./styles.css";
 import Image from "next/image";
 
 export default function Studies() {
     return (
-        <main className="px-4">
-            <h1 className="text-center w-full text-3xl">
+        <main className="studies px-4">
+            <h1 className="text-center text-3xl font-bold md:text-6xl">
                 What did I study?
-                <School />
             </h1>
 
-            <section className="grid grid-cols-1 place-items-center
-            p-2.5 
-            gap-5
+            <section className="grid grid-cols-1 place-items-center p-2.5 gap-5
             " >
                 <article>
                     <h2>
@@ -20,16 +16,20 @@ export default function Studies() {
                         <br />
                         Microcomputer Systems & Networks
                     </h2>
-                    <span>
+                    <h3>
                         IES Cura Valera ( 20220-2022 )
-                    </span>
+                    </h3>
                     <p>
                         I completed an Intermediate Vocational Training program in Microcomputer Systems and Networks.
                         This is a practical, hands-on program where I focused on computer hardware,
                         operating systems, local networks, and basic IT support. It gave me a strong technical base
                         very early in my career.
+                        <span>
+                            The name of this training program in spanish is Ciclo formativo de grado medio en sistemas microinformáticos y redes.
+                        </span>
                     </p>
-                    <Image src={"/aeroView.jpeg"} width={325} height={325} alt="Partial view of IES Cura Valera's buildings." />
+                    <Image className="md:hidden" src={"/aeroView.jpeg"} width={325} height={325} alt="Partial view of IES Cura Valera's buildings." />
+                    <Image src={"/aeroView.jpeg"} width={500} height={500} alt="Partial view of IES Cura Valera's buildings." />
                 </article>
 
                 <article>
@@ -46,8 +46,12 @@ export default function Studies() {
                         This specializes in server management, Linux administration,
                         virtualization, security, and cloud services. It significantly strengthened my skills as a
                         systems and network administrator. Also, I deep dive a litle into web development and CD/CI.
+                        <span>
+                            The name of this training program in spanish is Ciclo formativo de grado superior en administración de sistemas informáticos en red
+                        </span>
                     </p>
-                    <Image src={"/aeroViewPalmtree.jpeg"} width={325} height={325} alt="Partial view of the IES Cura Valera's yard." />
+                    <Image className="md:hidden" src={"/aeroViewPalmtree.jpeg"} width={325} height={325} alt="Partial view of the IES Cura Valera's yard." />
+                    <Image src={"/aeroViewPalmtree.jpeg"} width={500} height={500} alt="Partial view of the IES Cura Valera's yard." />
                 </article>
 
                 <article>
@@ -67,7 +71,8 @@ export default function Studies() {
                         the program helped me refine my technical direction and understand the fields I want to focus on.
                         It wasn&apos;t a failure for me, it showed me the path that I want to follow, keep myself always learning on my way
                     </p>
-                    <Image src={"/campusInternacionalCiberseguridad.jpg"} width={325} height={325} alt="Campus's logo" />
+                    <Image className="md:hidden" src={"/campusInternacionalCiberseguridad.jpg"} width={325} height={325} alt="Campus's logo" />
+                    <Image src={"/campusInternacionalCiberseguridad.jpg"} width={500} height={500} alt="Campus's logo" />
 
                 </article>
 

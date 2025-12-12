@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.projects section{
+    @apply grid grid-cols-1 gap-5
+}
+
+.projects article{
+    @apply
+    bg-linear-to-bl from-rose-100 via-gray-300 to-purple-300
+    grid grid-cols-1 gap-2.5 p-2.5
+    rounded-2xl border-2 border-purple-400
+}
+
+.projects article h2{
+    @apply
+    text-2xl text-center w-full
+}
+
+.projects article p{
+    @apply text-justify text-lg
+}
+
+.projects ul{
+    @apply text-lg list-disc list-inside
+}
+.projects img{
+    @apply rounded-2xl
+}
