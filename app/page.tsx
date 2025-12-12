@@ -5,7 +5,7 @@ export default function Home() {
     <main className="grid grid-cols-2 content-start justify-center place-items-center gap-2 p-4">
       <h1 className="col-span-2 text-center text-5xl md:text-7xl">
         Welcome to my Site!
-        <Home />
+        {/* <Home /> */}
       </h1>
       <h2 className="col-span-1 text-center text-3xl md:text-4xl font-bold">
         Here you&apos;ll find all about me or at least some of it.
