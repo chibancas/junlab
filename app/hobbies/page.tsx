@@ -100,12 +100,17 @@ export default function Hobbies() {
                         <h3 className="text-2xl text-center">
                             My Spotify Playlist
                         </h3>
-                        <iframe data-testid="embed-iframe" className="rounded-lg"
+                        <iframe data-testid="embed-iframe" className="rounded-lg block lg:hidden"
                             src="https://open.spotify.com/embed/playlist/2y3fwIaDs5aFh6KQkyjbST?utm_source=generator"
                             width="100%" height="352" frameBorder="0" allowFullScreen
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy">
-
+                        </iframe>
+                        <iframe data-testid="embed-iframe" className="rounded-lg hidden lg:block mx-auto"
+                            src="https://open.spotify.com/embed/playlist/2y3fwIaDs5aFh6KQkyjbST?utm_source=generator"
+                            width="60%" height="352" frameBorder="0" allowFullScreen
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
                         </iframe>
                     </div>
                 </article>
@@ -120,7 +125,8 @@ export default function Hobbies() {
                         and little side projects just for fun. And I quite mix all of that with work so I end up with tons of ideas and sometime I end up tired too soon.
                     </p>
                     <figure>
-                        <Image src={"/myDesk.jpg"} width={700} height={500} alt="My desktop" />
+                        <Image src={"/myDesk.jpg"} width={700} height={500} alt="My desktop" className="block md:hidden" />
+                        <Image src={"/myDesk.jpg"} width={1000} height={800} alt="My desktop" className="hidden md:block" />
                     </figure>
 
                 </article>
