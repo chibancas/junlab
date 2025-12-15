@@ -29,4 +29,6 @@
 .studies article span{
     @apply
     underline decoration-pink-500 underline-offset-2
+    text-xl font-medium
+    md:text-2xl
 }

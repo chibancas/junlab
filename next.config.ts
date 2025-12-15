@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
         protocol:"https",
         hostname:"upload.wikimedia.org",
         pathname:"/**"
+      },
+      {
+        protocol:"https",
+        hostname:"assets.vg247.com",
+        pathname:"/**"
       }
     ],
   },

@@ -24,12 +24,13 @@ export default function Studies() {
                         This is a practical, hands-on program where I focused on computer hardware,
                         operating systems, local networks, and basic IT support. It gave me a strong technical base
                         very early in my career.
+                        <br />
                         <span>
                             The name of this training program in spanish is Ciclo formativo de grado medio en sistemas microinformáticos y redes.
                         </span>
                     </p>
                     <Image className="md:hidden" src={"/aeroView.jpeg"} width={325} height={325} alt="Partial view of IES Cura Valera's buildings." />
-                    <Image src={"/aeroView.jpeg"} width={500} height={500} alt="Partial view of IES Cura Valera's buildings." />
+                    <Image className="hidden md:block" src={"/aeroView.jpeg"} width={500} height={500} alt="Partial view of IES Cura Valera's buildings." />
                 </article>
 
                 <article>
@@ -46,12 +47,13 @@ export default function Studies() {
                         This specializes in server management, Linux administration,
                         virtualization, security, and cloud services. It significantly strengthened my skills as a
                         systems and network administrator. Also, I deep dive a litle into web development and CD/CI.
+                        <br />
                         <span>
                             The name of this training program in spanish is Ciclo formativo de grado superior en administración de sistemas informáticos en red
                         </span>
                     </p>
                     <Image className="md:hidden" src={"/aeroViewPalmtree.jpeg"} width={325} height={325} alt="Partial view of the IES Cura Valera's yard." />
-                    <Image src={"/aeroViewPalmtree.jpeg"} width={500} height={500} alt="Partial view of the IES Cura Valera's yard." />
+                    <Image className="hidden md:block" src={"/aeroViewPalmtree.jpeg"} width={500} height={500} alt="Partial view of the IES Cura Valera's yard." />
                 </article>
 
                 <article>
@@ -72,7 +74,7 @@ export default function Studies() {
                         It wasn&apos;t a failure for me, it showed me the path that I want to follow, keep myself always learning on my way
                     </p>
                     <Image className="md:hidden" src={"/campusInternacionalCiberseguridad.jpg"} width={325} height={325} alt="Campus's logo" />
-                    <Image src={"/campusInternacionalCiberseguridad.jpg"} width={500} height={500} alt="Campus's logo" />
+                    <Image className="hidden md:block" src={"/campusInternacionalCiberseguridad.jpg"} width={500} height={500} alt="Campus's logo" />
 
                 </article>
 

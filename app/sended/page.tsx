@@ -1,13 +1,14 @@
-export default function NotFound() {
+export default function Sended() {
   return (
     <main className="flex flex-col justify-center items-center p-20">
       <h1 className="text-6xl font-extralight text-center">
-        404
+        Done!
         <br />
-        Page Not Found
+        Your message has been sent.
         </h1>
       <p className="text-xl text-center font-extrabold">
-        Sorry, the page you are looking for does not exist.
+        I will get back to you as soon as possible. Thank you for reaching out!
+        Menawhile you can try reach me via my social media or keep browsing my site.
       </p>
     </main>
   );

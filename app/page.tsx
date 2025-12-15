@@ -1,19 +1,18 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="grid grid-cols-2 content-start justify-center place-items-center gap-2 p-4">
       <h1 className="col-span-2 text-center text-5xl md:text-7xl">
         Welcome to my Site!
-        {/* <Home /> */}
       </h1>
+      
       <h2 className="col-span-1 text-center text-3xl md:text-4xl font-bold">
         Here you&apos;ll find all about me or at least some of it.
       </h2>
 
       <figure className="col-span-1 flex flex-col justify-center items-center gap-2">
-        <Image src={"/yo.jpg"} alt={"A picture of me taken randomly."} width={100} height={100} className="rounded-full md:hidden" />
-        <Image src={"/yo.jpg"} alt={"A picture of me taken randomly."} width={200} height={200} className="rounded-full" />
+        <Image src={"/yo.jpg"} alt={"A picture of me taken randomly."} width={100} height={100} className="rounded-full block md:hidden" />
+        <Image src={"/yo.jpg"} alt={"A picture of me taken randomly."} width={200} height={200} className="rounded-full hidden md:block " />
         <figcaption className="text-xl md:text-2xl text-center">
           Juan José Fdez
           <br />

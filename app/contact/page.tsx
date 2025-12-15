@@ -1,20 +1,20 @@
 import Link from 'next/link'
 import './styles.css'
-import { GitBranch, Linkedin, Mail, Play, SquareUserRound } from 'lucide-react'
+import { GitBranch, Linkedin, Mail, Play } from 'lucide-react'
+import { sendContact } from './actions'
+
 export default function Contact() {
     return (
         <main className='contact flex flex-col gap-5'>
             <h1 className='text-3xl md:text-6xl text-center font-bold'>
                 Let&apos;s get in contact!
-                <SquareUserRound size={60}/>
-                <SquareUserRound className='md:hidden'/>
             </h1>
 
-            <form action="/" method='POST'
+            <form action={sendContact}
                 className='grid grid-cols-1 w-[75vw] bg-gray-300 mx-auto p-3 text-2xl gap-3 border-2 border-gray-400 rounded-lg'>
-                <input type="text" name="name" id="name" placeholder='Type your name here' />
-                <input type="email" name="email" id="email" placeholder='Type your email here' />
-                <textarea name="message" id="message" placeholder='Type your message here' />
+                <input type="text" name="name" id="name" placeholder='Type your name here' required />
+                <input type="email" name="email" id="email" placeholder='Type your email here' required />
+                <textarea name="message" id="message" placeholder='Type your message here' required />
 
                 <div id="data-agreement-container" className="flex flex-row flex-wrap items-center justify-center text-center">
                     <label htmlFor="data-agreement" className='w-full'>
@@ -24,7 +24,7 @@ export default function Contact() {
                     <span>
                         Yes, I&apos;m agree
                     </span>
-                    <input type="checkbox" name="data-agreement" id="data-agreement" className='m-5 md:scale-200' />
+                    <input type="checkbox" name="data-agreement" id="data-agreement" className='m-5 md:scale-200' required />
 
                 </div>
 

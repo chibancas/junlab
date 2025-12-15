@@ -1,13 +1,13 @@
-export default function NotFound() {
+export default function ErrorPage() {
   return (
     <main className="flex flex-col justify-center items-center p-20">
       <h1 className="text-6xl font-extralight text-center">
-        404
+        500
         <br />
-        Page Not Found
+        Internal Server Error
         </h1>
       <p className="text-xl text-center font-extrabold">
-        Sorry, the page you are looking for does not exist.
+        Sorry, there was a problem sending your form. Please try again later..
       </p>
     </main>
   );

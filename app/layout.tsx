@@ -41,8 +41,9 @@ export default function RootLayout({
           </h1>
           <figure className="flex flex-col items-center justify-center gap-4">
             <Image src={"/logo.png"} alt={"Junlab's logo"} width={300} height={300} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
-            md:hidden lg:hidden" />
-            <Image src={"/logo.png"} alt={"Junlab's logo"} width={700} height={750} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2" />
+            md:hidden block" />
+            <Image src={"/logo.png"} alt={"Junlab's logo"} width={700} height={750} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
+            hidden md:block" />
             <span className="typer">
               <TypewriterText texts={texts} />
             </span>
@@ -85,7 +86,7 @@ export default function RootLayout({
         <footer className="grid grid-cols-1 gap-4">
           <figure className="grid grid-cols-2 place-items-center justify-center">
             <Image src={"/favicon.ico"} alt={"Junlab's logo"} width={100} height={100} className="md:hidden" />
-            <Image src={"/favicon.ico"} alt={"Junlab's logo"} width={150} height={150} />
+            <Image src={"/favicon.ico"} alt={"Junlab's logo"} width={150} height={150} className="hidden md:block" />
             <h1 className="siteTitle">
               Junlab
             </h1>
@@ -94,8 +95,8 @@ export default function RootLayout({
             <h2 className="col-span-2 text-2xl md:text-3xl text-center w-full">
               Developed using
             </h2>
-            <Image src={"/next.svg"} alt={"Junlab's logo"} width={100} height={100} className="md:hidden" />
-            <Image src={"/next.svg"} alt={"Junlab's logo"} width={150} height={150} />
+            <Image src={"/next.svg"} alt={"Junlab's logo"} width={100} height={100} className="block md:hidden" />
+            <Image src={"/next.svg"} alt={"Junlab's logo"} width={150} height={150} className="hidden md:block" />
           </figure>
           <h3 className="text-center text-xl">
             Copyright &copy; {new Date().getFullYear()} Junlab.

@@ -10,9 +10,17 @@
 
 .gaming{
     @apply
-    grid grid-cols-3
+    grid grid-cols-4
     place-items-center
     align-middle justify-center items-center
+    gap-3
+    md:gap-5
+}
+
+.gaming figure{
+    @apply
+    col-span-2
+    grid grid-cols-1 place-items-center justify-center
 }
 
 .hobbies section article h2{
@@ -40,6 +48,6 @@
 }
 
 .hobbies section figure figcaption{
-    @apply text-center text-lg
+    @apply text-center text-lg md:text-xl
 }
 
