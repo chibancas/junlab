@@ -3,7 +3,7 @@
 .studies article{
     @apply p-4
     bg-linear-to-tr from-zinc-200 via-gray-400 to-lime-500
-    rounded-2xl
+    rounded-2xl lg:mx-auto
 }
 
 .studies article h2 {

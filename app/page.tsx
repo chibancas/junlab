@@ -1,8 +1,10 @@
 import Image from "next/image";
 export default function Home() {
   return (
-    <main className="grid grid-cols-2 content-start justify-center place-items-center gap-2 p-4">
-      <h1 className="col-span-2 text-center text-5xl md:text-7xl">
+    <main className="grid grid-cols-2 content-start justify-center place-items-center gap-2 p-4
+    lg:flex flex-wrap lg:justify-center lg:gap-5">
+      <h1 className="col-span-2 text-center text-5xl md:text-7xl
+      lg:w-full">
         Welcome to my Site!
       </h1>
       
@@ -20,7 +22,8 @@ export default function Home() {
         </figcaption>
       </figure>
 
-      <section className="col-span-2 flex flex-col justify-center items-center gap-4 px-6">
+      <section className="col-span-2 flex flex-col justify-center items-center gap-4 px-6
+      lg:w-[50%]">
 
         <p className="text-xl md:text-2xl text-justify">
           Feel free to explore the different sections using the navigation menu above.

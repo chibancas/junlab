@@ -15,13 +15,14 @@ body{
   flex flex-col gap-2.5 align-middle justify-center p-[1dvh]
   bg-linear-to-bl from-neutral-300 via-stone-400 to-slate-300
   antialiased min-h-screen
+  lg:w-[80%] lg:mx-auto
 }
 
 header{
   @apply
   /* min-h-[20dvh] */
   grid grid-cols-1 justify-center align-middle
-
+  lg:grid-cols-2
 }
 .typer{
   @apply text-4xl md:text-6xl
