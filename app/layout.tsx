@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import TypewriterText from "@/components/typer";
+import TypewriterText from "@/components/Typer";
 import { FolderKanban, GraduationCap, Home, SmilePlus, SquareUserRound } from "lucide-react";
 
 
@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Junlab",
   description: "From my room to the world!",
-  keywords: ["Junlab", "Projects", "Studies", "Hobbies", "Contact", "Portfolio", "Next.js", "React", "TypeScript","Web Development","Programming","Software Engineer","Tech Enthusiast","Personal Website","Juan José Fernández Fernández" ,"Juanjo","Developer Portfolio", "Juan José","Vera"],
+  keywords: ["Junlab", "Projects", "Studies", "Hobbies", "Contact", "Portfolio", "Next.js", "React", "TypeScript", "Web Development", "Programming", "Software Engineer", "Tech Enthusiast", "Personal Website", "Juan José Fernández Fernández", "Juanjo", "Developer Portfolio", "Juan José", "Vera"],
 };
 
 const texts = ["Hello World!", "Welcome to Junlab", " Explore my projects"];
@@ -39,18 +39,16 @@ export default function RootLayout({
           <h1 className="siteTitle hidden">
             Junlab
           </h1>
-          <figure className="flex flex-col items-center justify-center gap-4">
-            <Image src={"/logo.png"} alt={"Junlab's logo"} width={300} height={300} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
+          <figure className="flex flex-col items-center justify-center gap-4
+          lg:col-span-1">
+            <Image id="llega" src={"/logo.png"} alt={"Junlab's logo"} width={300} height={300} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
             block md:hidden lg:hidden" />
             <Image src={"/logo.png"} alt={"Junlab's logo"} width={700} height={750} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
             hidden md:block lg:hidden" />
             <Image src={"/logo.png"} alt={"Junlab's logo"} width={500} height={550} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
             hidden lg:block" />
-            <span className="typer">
-              <TypewriterText texts={texts} />
-            </span>
           </figure>
-          <nav className="nav">
+          <nav className="nav lg:col-span-1">
             <Link href={"/"} >
               <Home />
               <span>
@@ -82,6 +80,9 @@ export default function RootLayout({
               </span>
             </Link>
           </nav>
+          <span className="typer col-span-2">
+            <TypewriterText texts={texts} />
+          </span>
         </header>
         {children}
 
