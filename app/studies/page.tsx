@@ -1,5 +1,20 @@
+import type { Metadata } from "next";
 import "./styles.css";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Studies | Junlab",
+    description: "A quick overview of the academic paths that shaped my technical foundations and love for learning.",
+    alternates: {
+        canonical: "/studies",
+    },
+    openGraph: {
+        title: "Studies | Junlab",
+        description: "Discover my education history, from networking to cybersecurity.",
+        url: "/studies",
+        type: "article",
+    },
+};
 
 export default function Studies() {
     return (

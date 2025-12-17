@@ -14,15 +14,15 @@ body{
   flex flex-col gap-2.5 align-middle justify-center p-[1dvh]
   bg-linear-to-bl from-neutral-300 via-stone-400 to-slate-300
   antialiased min-h-screen
-  lg:w-[80%] lg:mx-auto
+  lg:w-[95%] lg:mx-auto
 }
 
 header{
   @apply
   /* min-h-[20dvh] */
-  flex flex-row flex-wrap justify-center align-middle
-  lg:grid-cols-2
+  flex flex-row flex-wrap justify-center align-middle md:grid md:grid-cols-2
 }
+
 .typer{
   @apply text-2xl md:text-6xl md:p-2.5
   w-full text-center font-light underline underline-offset-4 decoration-white decoration-4;
@@ -40,6 +40,8 @@ header{
 .nav{
   /* @apply flex flex-row flex-wrap justify-center p-2.5 gap-2 */
   @apply grid grid-cols-2 gap-2 p-2 place-items-center align-middle
+  w-full
+  
 }
 
 a{
