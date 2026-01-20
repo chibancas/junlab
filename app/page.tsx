@@ -22,7 +22,7 @@ export default function Home() {
         Welcome to my Site!
       </h1>
 
-      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold max-w-prose">
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold max-w-prose w-[70%]">
         Here you&apos;ll find all about me or at least some of it.
       </h2>
 

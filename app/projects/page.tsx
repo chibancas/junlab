@@ -19,7 +19,7 @@ export default function Projects() {
     return (
         <main className="projects px-4">
 
-            <h1 className='text-center text-3xl font-bold'>
+            <h1 className='text-center text-3xl font-bold md:text-6xl'>
                 My Projects
             </h1>
 
@@ -180,7 +180,7 @@ export default function Projects() {
                         great example of adapting the Linux environment to my accessibility needs.
                     </p>
 
-                    <p>Sadly I deleted thw Linux system where I had all settted up so yo&apos;ll have to trust me. ;) </p>
+                    <p>Sadly I deleted the Linux system where I had all settted up so yo&apos;ll have to trust me. ;) </p>
                 </article>
             </section>
 

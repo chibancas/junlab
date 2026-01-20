@@ -23,7 +23,7 @@ export default function Hobbies() {
 
 
             {/* mb-4 */}
-            <h1 className="text-3xl font-bold text-center">
+            <h1 className="text-3xl font-bold text-center md:text-6xl">
                 My hobbies
             </h1>
 
