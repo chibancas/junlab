@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Server Error | Junlab",
+  description: "There was a problem sending your form.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function ErrorPage() {
   return (
     <main className="flex flex-col justify-center items-center p-6 sm:p-10 md:p-20">

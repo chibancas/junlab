@@ -1,7 +1,22 @@
-import Link from 'next/link'
-import './styles.css'
-import { BriefcaseBusiness, GitBranch, Mail, Play } from 'lucide-react'
-import ContactForm from '@/components/ContactForm'
+import type { Metadata } from "next";
+import Link from "next/link";
+import "./styles.css";
+import { BriefcaseBusiness, GitBranch, Mail, Play } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
+
+export const metadata: Metadata = {
+    title: "Contact | Junlab",
+    description: "Get in touch with Juan Jose Fernandez via the contact form or social links.",
+    alternates: {
+        canonical: "/contact",
+    },
+    openGraph: {
+        title: "Contact | Junlab",
+        description: "Reach out to discuss projects, collaborations, or questions.",
+        url: "/contact",
+        type: "website",
+    },
+};
 
 export default function Contact() {
     return (

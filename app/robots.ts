@@ -1,17 +1,12 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://junlab.es";
-
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/error", "/not-found"],
-      },
-    ],
-    sitemap: `${siteUrl}/sitemap.xml`,
-    host: siteUrl,
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/sended", "/error"],
+    },
+    sitemap: "https://junlab.es/sitemap.xml",
   };
 }

@@ -19,6 +19,18 @@ export default function ContactForm() {
             <input type="email" name="email" id="email" placeholder='Type your email here' maxLength={250} minLength={10} required />
             <textarea name="message" id="message" placeholder='Type your message here' maxLength={800} minLength={10} required />
 
+            <div className="sr-only" aria-hidden="true">
+                <label htmlFor="contact_ref">Contact reference</label>
+                <input
+                    type="text"
+                    name="contact_ref"
+                    id="contact_ref"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    inputMode="none"
+                />
+            </div>
+
             <div id="data-agreement-container" className="flex flex-row flex-wrap items-center justify-center text-center">
                 <label htmlFor="data-agreement" className='w-full'>
                     By checking this box you agree to let me store your data for contact purposes.

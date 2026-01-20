@@ -1,5 +1,20 @@
-import './styles.css'
-import Image from 'next/image'
+import type { Metadata } from "next";
+import "./styles.css";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Projects | Junlab",
+    description: "Selected projects: automation, full-stack experiments, and infrastructure work.",
+    alternates: {
+        canonical: "/projects",
+    },
+    openGraph: {
+        title: "Projects | Junlab",
+        description: "A curated set of my main technical projects and experiments.",
+        url: "/projects",
+        type: "article",
+    },
+};
 export default function Projects() {
     return (
         <main className="projects px-4">

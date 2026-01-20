@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import { Gamepad2, LaptopMinimal, Music } from "lucide-react";
-import "./styles.css"
-import Image from 'next/image'
+import "./styles.css";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Hobbies | Junlab",
+    description: "Gaming, music, and tech curiosity outside of work.",
+    alternates: {
+        canonical: "/hobbies",
+    },
+    openGraph: {
+        title: "Hobbies | Junlab",
+        description: "What I enjoy outside of projects: games, music, and tech exploration.",
+        url: "/hobbies",
+        type: "article",
+    },
+};
 
 export default function Hobbies() {
     return (

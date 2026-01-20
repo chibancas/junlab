@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Junlab | Home",
+  description: "Personal portfolio of Juan Jose Fernandez: projects, studies, hobbies, and contact.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Junlab | Home",
+    description: "Personal portfolio with projects, studies, hobbies, and contact details.",
+    url: "/",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (

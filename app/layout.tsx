@@ -82,6 +82,20 @@ export const metadata: Metadata = {
 };
 
 const texts = ["Hello World!", "Welcome to Junlab", " Explore my projects"];
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Juan Jose Fernandez",
+  url: "https://junlab.es",
+  jobTitle: "Software Engineer",
+  description: "Portfolio site with projects, studies, and hobbies.",
+  image: "https://junlab.es/logo.png",
+  sameAs: [
+    "https://github.com/chibancas/",
+    "https://www.linkedin.com/in/juan-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez-16b8a52a8/",
+    "https://www.youtube.com/@chibancas",
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -146,6 +160,10 @@ export default function RootLayout({
         </header>
         {children}
         <PolicyButton />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
 
         <footer className="grid grid-cols-1 gap-4">
           <figure className="grid grid-cols-2 place-items-center justify-center

@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Message Sent | Junlab",
+  description: "Confirmation that your message was sent.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function Sended() {
   return (
     <main className="flex flex-col justify-center items-center p-6 sm:p-10 md:p-20">

@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Page Not Found | Junlab",
+  description: "The page you are looking for does not exist.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function NotFound() {
   return (
     <main className="flex flex-col justify-center items-center p-20">
