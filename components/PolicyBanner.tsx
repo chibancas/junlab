@@ -3,7 +3,7 @@ import './PolicyBanner.css'
 
 export default function PolicyBanner() {
   return (
-    <main className="policy grid grid-cols-1 gap-2.5 justify-center place-items-center align-middle">
+    <main className="policy grid grid-cols-1 gap-2.5 justify-center place-items-center align-middle w-full max-h-[70vh] overflow-y-auto pr-2">
       <h1>Privacy & Cookies Policy</h1>
 
       <h2>No analytics, no tracking</h2>
@@ -21,43 +21,45 @@ export default function PolicyBanner() {
       </p>
 
       <section>
-        <h3>Technologies used</h3>
+        <h3 className='underline decoration-2'>Technologies used:</h3>
 
         <nav>
-              <Link
-                href="https://nextjs.org/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Next.js
-              </Link>
-              <span> - React framework for server-rendered applications</span>
+          <Link
+            href="https://nextjs.org/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              Next.js - React framework for server-rendered applications
+            </span>
+          </Link>
 
-              <Link
-                href="https://react.dev/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                React & React DOM
-              </Link>
-              <span> - UI rendering library</span>
+          <Link
+            href="https://react.dev/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              React & React DOM - UI rendering library
+            </span>
+          </Link>
 
-              <Link
-                href="https://lucide.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Lucide React
-              </Link>
-              <span> - Icon library</span>
-            
-              <Link
-                href="https://www.npmjs.com/package/typewriter-effect"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Typewriter Effect
-              </Link>
+          <Link
+            href="https://lucide.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lucide React
+          </Link>
+          <span>Icon library</span>
+
+          <Link
+            href="https://www.npmjs.com/package/typewriter-effect"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Typewriter Effect
+          </Link>
         </nav>
       </section>
 

@@ -18,15 +18,13 @@ export default function Contact() {
                 </h2>
 
                 <nav className='nav'>
-                    <Link href={'#'}>
+                    <Link href={'https://www.linkedin.com/in/juan-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez-16b8a52a8/'}>
                         <BriefcaseBusiness />
                         <span>
                             LinkedIn
                         </span>
                     </Link>
-                    <Link href={'mailto:jj.ff.tecno@gmail.com?subject=Contact%20Form%20%7C%20Junlab&body=Hey%2C%20I%20just%20saw%20your%20web%20and%20I%27d%20like%20to%20get%20in%20touch.'}
-                        className='w-25'>
-                    <Link href={'#'}>
+                    <Link href={'mailto:jj.ff.tecno@gmail.com?subject=Contact%20Form%20%7C%20Junlab&body=Hey%2C%20I%20just%20saw%20your%20web%20and%20I%27d%20like%20to%20get%20in%20touch.'} className='w-25'>
                         <Mail />
                         <span>
                             Gmail

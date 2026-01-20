@@ -143,17 +143,9 @@ export default function RootLayout({
               </span>
             </Link>
           </nav>
-          <span className="typer col-span-2">
-            <TypewriterText texts={texts} />
-            <p aria-live="polite" className="sr-only">
-              {/* Hello World! Welcome to Junlab. Explore my projects. */}
-              {texts.toString()}
-            </p>
-          </span>
         </header>
         {children}
         <PolicyButton />
-
 
         <footer className="grid grid-cols-1 gap-4">
           <figure className="grid grid-cols-2 place-items-center justify-center

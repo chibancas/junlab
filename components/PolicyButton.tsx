@@ -20,8 +20,8 @@ export default function PolicyButton() {
 
       {/* Modal */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-          <div className="relative max-w-lg rounded-xl bg-white p-6 text-black mx-5">
+        <div className="fixed inset-0 z-50 flex items-start justify-center bg-black/60 py-8">
+          <div className="relative w-full max-w-lg max-h-[85vh] overflow-hidden rounded-xl bg-white pt-12 px-6 pb-6 text-black mx-5">
             <button
               onClick={() => setOpen(false)}
               className="
