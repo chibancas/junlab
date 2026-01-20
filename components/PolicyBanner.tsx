@@ -23,14 +23,14 @@ export default function PolicyBanner() {
       <section>
         <h3 className='underline decoration-2'>Technologies used:</h3>
 
-        <nav>
+        <nav className='flex flex-col gap-1'>
           <Link
             href="https://nextjs.org/privacy-policy"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span>
-              Next.js - React framework for server-rendered applications
+              - Next.js - React framework for server-rendered applications
             </span>
           </Link>
 
@@ -40,7 +40,7 @@ export default function PolicyBanner() {
             rel="noopener noreferrer"
           >
             <span>
-              React & React DOM - UI rendering library
+              - React & React DOM - UI rendering library
             </span>
           </Link>
 
@@ -49,17 +49,21 @@ export default function PolicyBanner() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Lucide React
+            <span>
+              - Lucide React Icon library
+            </span>
           </Link>
-          <span>Icon library</span>
 
           <Link
             href="https://www.npmjs.com/package/typewriter-effect"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Typewriter Effect
+            <span>
+             - Typewriter Effect
+            </span>
           </Link>
+
         </nav>
       </section>
 

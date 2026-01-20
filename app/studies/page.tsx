@@ -71,7 +71,7 @@ export default function Studies() {
                     <Image className="hidden md:block" src={"/aeroViewPalmtree.jpeg"} width={500} height={500} alt="Partial view of the IES Cura Valera's yard." />
                 </article>
 
-                <article>
+                <article className="hidden">
                     <h2>
                         Cybersecurity Master Degree
                         <br />
