@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description: "From my room to the world!",
     url: "/",
     siteName: "Junlab",
-    locale: "en_US",
+    locale: "es_ES",
     type: "website",
     images: [
       {
@@ -121,9 +121,6 @@ export default function RootLayout({
               className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
               w-full max-w-60 sm:max-w-[320px] md:max-w-105 lg:max-w-130 h-auto"
             />
-            <span className="typer">
-              <TypewriterText texts={texts} />
-            </span>
           </figure>
           <nav className="nav md:col-span-1">
             <Link href={"/"} >
@@ -157,6 +154,9 @@ export default function RootLayout({
               </span>
             </Link>
           </nav>
+          <span className="typer col-span-2 lg:m-5">
+              <TypewriterText texts={texts} />
+            </span>
         </header>
         {children}
         <PolicyButton />
