@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Junlab
 
-## Getting Started
+Junlab is a personal portfolio website for Juan Jose Fernandez. The site shares projects, studies, hobbies, and a contact form. It is built with Next.js (App Router), React, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## What the site includes
+
+- Home page with a short intro and profile photo.
+- Projects page with a list of real work and experiments.
+- Studies page with education history and photos.
+- Hobbies page with games, music, and a Spotify embed.
+- Contact page with a form and social links.
+- Privacy and cookies modal with a short policy.
+- Custom SEO metadata, Open Graph tags, robots, and sitemap.
+
+## Tech stack
+
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS v4 (via PostCSS)
+- Lucide React icons
+- Typewriter effect for the header text
+
+## How it is built
+
+- Pages live in `app/` and use the App Router.
+- Each section has its own CSS file in `app/<section>/styles.css`.
+- Shared UI lives in `components/`.
+- The layout adds the global header, nav, footer, and the policy modal.
+- Images are optimized with `next/image`, and allowed remote hosts are set in `next.config.ts`.
+- Security headers are set in `next.config.ts` (CSP, HSTS, etc.).
+
+## Contact form flow
+
+The contact form is a server action in `app/contact/actions.ts` and a client form in `components/ContactForm.tsx`.
+
+It includes:
+
+- Basic validation on name, email, and message.
+- A checkbox for data consent.
+- A hidden honeypot input to reduce spam.
+- Simple rate limiting in memory.
+- A POST to an n8n webhook, protected with `N8N_FORM_SECRET`.
+
+If the webhook fails, the user sees a friendly error. If it succeeds, a success message is returned.
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The dev server runs on port `40000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+The start script also uses port `40000`.
 
-To learn more about Next.js, take a look at the following resources:
+## Docker setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+There is a Docker setup at `portfolio-NextJS/dockerfile` and a compose file at `portfolio-NextJS/compose.yml`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Docker flow:
 
-## Deploy on Vercel
+- Builds the app from the `junlab` folder.
+- Runs `npm install` and `npm run build` during image build.
+- Starts the app on port `31213`.
+- Compose maps `127.0.0.1:31213` on the host to the container.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Environment variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create a `.env` file inside `junlab/` with:
+
+```bash
+N8N_FORM_SECRET=your_secret_value
+```
+
+This value is used to authenticate the contact form webhook.
+
+## Deployment notes
+
+- The site is designed to run behind a reverse proxy (for example Apache or Nginx).
+- The proxy should point to `127.0.0.1:31213` if you use the Docker compose setup.
+- CSP allows images from a small allowlist and Spotify embeds.
