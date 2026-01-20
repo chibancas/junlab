@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import TypewriterText from "@/components/typer";
+import TypewriterText from "@/components/Typer";
 import { FolderKanban, GraduationCap, Home, SmilePlus, SquareUserRound } from "lucide-react";
+import PolicyButton from "@/components/PolicyButton";
 
 
 const geistSans = Geist({
@@ -18,9 +19,66 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://junlab.es"),
   title: "Junlab",
   description: "From my room to the world!",
-  keywords: ["Junlab", "Projects", "Studies", "Hobbies", "Contact", "Portfolio", "Next.js", "React", "TypeScript","Web Development","Programming","Software Engineer","Tech Enthusiast","Personal Website","Juan José Fernández Fernández" ,"Juanjo","Developer Portfolio", "Juan José","Vera"],
+  keywords: [
+    "Junlab",
+    "Projects",
+    "Studies",
+    "Hobbies",
+    "Contact",
+    "Portfolio",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Web Development",
+    "Programming",
+    "Software Engineer",
+    "Tech Enthusiast",
+    "Personal Website",
+    "Juan José Fernández Fernández",
+    "Juanjo",
+    "Developer Portfolio",
+    "Juan José",
+    "Vera",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Junlab",
+    description: "From my room to the world!",
+    url: "/",
+    siteName: "Junlab",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Junlab logotype over gradient background",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Junlab",
+    description: "From my room to the world!",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const texts = ["Hello World!", "Welcome to Junlab", " Explore my projects"];
@@ -53,7 +111,7 @@ export default function RootLayout({
               <TypewriterText texts={texts} />
             </span>
           </figure>
-          <nav className="nav">
+          <nav className="nav md:col-span-1">
             <Link href={"/"} >
               <Home />
               <span>
@@ -85,8 +143,17 @@ export default function RootLayout({
               </span>
             </Link>
           </nav>
+          <span className="typer col-span-2">
+            <TypewriterText texts={texts} />
+            <p aria-live="polite" className="sr-only">
+              {/* Hello World! Welcome to Junlab. Explore my projects. */}
+              {texts.toString()}
+            </p>
+          </span>
         </header>
         {children}
+        <PolicyButton />
+
 
         <footer className="grid grid-cols-1 gap-4">
           <figure className="grid grid-cols-2 place-items-center justify-center
