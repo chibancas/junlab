@@ -10,16 +10,22 @@
 
 .gaming{
     @apply
-    grid grid-cols-4
-    place-items-center
-    align-middle justify-center items-center
+    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+    items-start justify-items-stretch
+    sm:items-center sm:justify-items-center
     gap-3
     md:gap-5
 }
 
+.gaming h2,
+.gaming p{
+    @apply w-full
+}
+
 .gaming figure{
     @apply
-    col-span-2
+    col-span-1 sm:col-span-2 lg:col-span-2
+    w-full sm:w-auto
     grid grid-cols-1 place-items-center justify-center
 }
 
@@ -44,7 +50,7 @@
 }
 
 .hobbies section figure img{
-    @apply rounded-xl
+    @apply rounded-xl max-w-full h-auto
 }
 
 .hobbies section figure figcaption{

@@ -12,10 +12,10 @@ html{
 body{
   font-family: Arial, Helvetica, sans-serif;
   @apply
-  flex flex-col gap-2.5 align-middle justify-center p-[1dvh]
+  flex flex-col gap-3 align-middle justify-center p-3 sm:p-4 md:p-6
   bg-linear-to-bl from-neutral-300 via-stone-400 to-slate-300
-  antialiased min-h-screen
-  lg:w-[80%] lg:mx-auto
+  antialiased min-h-screen overflow-x-hidden
+  lg:w-[85%] lg:mx-auto
 }
 
 header{
@@ -25,7 +25,7 @@ header{
   lg:grid-cols-2
 }
 .typer{
-  @apply text-4xl md:text-6xl
+  @apply text-2xl sm:text-3xl md:text-5xl lg:text-6xl
   w-full text-center font-light underline underline-offset-4 decoration-white decoration-4;
     /* animation: bluePulse 2s infinite ease-in-out; */
 }
@@ -41,22 +41,28 @@ header{
 .nav{
   /* @apply flex flex-row flex-wrap justify-center p-2.5 gap-2 */
   @apply grid grid-cols-2 gap-2 p-2 place-items-center align-middle
+  /* lg:flex lg:flex-wrap lg:justify-center lg:gap-4 */
+  lg:grid lg:grid-cols-2 lg:justify-center lg:gap-4
 }
 
 a{
-  @apply text-center text-2xl w-full
-  md:text-4xl
-  p-2 rounded-lg bg-linear-to-br from-gray-300 via-gray-400 to-neutral-400
+  @apply flex flex-col items-center justify-center gap-1 text-center w-full
+  text-lg sm:text-xl md:text-2xl
+  leading-tight p-2.5 rounded-lg bg-linear-to-br from-gray-300 via-gray-400 to-neutral-400
   border-2 border-gray-500
   hover:bg-linear-to-br hover:from-gray-400 hover:via-gray-500 hover:to-neutral-500
   hover:text-white hover:border-white
   transition-all duration-500 ease-in-out 
   focus:bg-linear-to-br focus:from-gray-400 focus:via-gray-500 focus:to-neutral-500
-  focus:text-white focus:border-white
+  focus:text-white focus:border-white;
 }
 
 svg{
-  @apply text-center w-full
+  @apply text-center w-6 h-6 md:w-8 md:h-8
+}
+
+img{
+  @apply max-w-full h-auto
 }
 
 /* main{
@@ -70,7 +76,7 @@ svg{
 } */
 
 .siteTitle{
-  @apply text-center text-6xl font-light font-serif tracking-tight text-[#B15522] animate-pulse transition-all
+  @apply text-center text-3xl sm:text-4xl md:text-6xl font-light font-serif tracking-tight text-[#B15522] animate-pulse transition-all
 }
 
 .siteLogo{

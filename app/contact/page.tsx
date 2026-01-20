@@ -19,29 +19,25 @@ export default function Contact() {
                 </h2>
 
                 <nav className='nav'>
-                    <Link href={'#'}
-                        className='w-25'>
+                    <Link href={'#'}>
                         <Linkedin />
                         <span>
                             LinkedIn
                         </span>
                     </Link>
-                    <Link href={'#'}
-                        className='w-25'>
+                    <Link href={'#'}>
                         <Mail />
                         <span>
                             Gmail
                         </span>
                     </Link>
-                    <Link href={'#'}
-                        className='w-25'>
+                    <Link href={'#'}>
                         <Play />
                         <span>
                             Youtube
                         </span>
                     </Link>
-                    <Link href={'#'}
-                        className='w-25'>
+                    <Link href={'#'}>
                         <GitBranch />
                         <span>
                             Github

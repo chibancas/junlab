@@ -21,10 +21,10 @@ export default function Hobbies() {
             <section className="grid grid-cols-1 gap-6">
 
                 <article className="gaming">
-                    <h2 className="col-span-4">
+                    <h2 className="col-span-1 sm:col-span-2 lg:col-span-4">
                         <Gamepad2 /> Gaming
                     </h2>
-                    <p className="col-span-4">
+                    <p className="col-span-1 sm:col-span-2 lg:col-span-4">
                         I play both flat-screen and VR games.
                         Sometimes I dive into story-driven worlds, other times I just relax driving,
                         flying or exploring open maps.
@@ -33,50 +33,74 @@ export default function Hobbies() {
                     </p>
 
                     <figure>
-                        <Image alt="Forza Horizon 4 Cover" src={"https://upload.wikimedia.org/wikipedia/en/8/87/Forza_Horizon_4_cover.jpg"}
-                            height={300} width={100} className="block md:hidden" />
-                        <Image alt="Forza Horizon 4 Cover" src={"https://upload.wikimedia.org/wikipedia/en/8/87/Forza_Horizon_4_cover.jpg"}
-                            height={600} width={200} className="hidden md:block" />
+                        <Image
+                            alt="Forza Horizon 4 Cover"
+                            src={"https://upload.wikimedia.org/wikipedia/en/8/87/Forza_Horizon_4_cover.jpg"}
+                            height={600}
+                            width={400}
+                            sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 160px"
+                            className="w-full max-w-55 h-auto"
+                        />
                         <figcaption>Forza Horizon 4</figcaption>
                     </figure>
 
                     <figure>
-                        <Image alt="Red Dead Redemption 2 Cover" src={"https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg"}
-                            height={300} width={100} className="block md:hidden" />
-                        <Image alt="Red Dead Redemption 2 Cover" src={"https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg"}
-                            height={600} width={200} className="hidden md:block" />
+                        <Image
+                            alt="Red Dead Redemption 2 Cover"
+                            src={"https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg"}
+                            height={600}
+                            width={400}
+                            sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 160px"
+                            className="w-full max-w-55 h-auto"
+                        />
                         <figcaption>Red Dead Redemption 2</figcaption>
                     </figure>
 
                     <figure>
-                        <Image alt="Uncharted 4 Cover" src={"https://cdn-images.dzcdn.net/images/cover/c3fdde445d80b67a8d6ff09020154939/0x1900-000000-80-0-0.jpg"}
-                            height={300} width={100} className="block md:hidden" />
-                        <Image alt="Uncharted 4 Cover" src={"https://cdn-images.dzcdn.net/images/cover/c3fdde445d80b67a8d6ff09020154939/0x1900-000000-80-0-0.jpg"}
-                            height={600} width={200} className="hidden md:block" />
+                        <Image
+                            alt="Uncharted 4 Cover"
+                            src={"https://cdn-images.dzcdn.net/images/cover/c3fdde445d80b67a8d6ff09020154939/0x1900-000000-80-0-0.jpg"}
+                            height={600}
+                            width={400}
+                            sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 160px"
+                            className="w-full max-w-55 h-auto"
+                        />
                         <figcaption>Uncharted 4</figcaption>
                     </figure>
 
                     <figure>
-                        <Image alt="Watch Dogs Cover" src={"https://static.posters.cz/image/1300/15072.jpg"}
-                            height={300} width={100} className="block md:hidden" />
-                        <Image alt="Watch Dogs Cover" src={"https://static.posters.cz/image/1300/15072.jpg"}
-                            height={600} width={200} className="hidden md:block" />
+                        <Image
+                            alt="Watch Dogs Cover"
+                            src={"https://static.posters.cz/image/1300/15072.jpg"}
+                            height={600}
+                            width={400}
+                            sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 160px"
+                            className="w-full max-w-55 h-auto"
+                        />
                         <figcaption>Watch Dogs</figcaption>
                     </figure>
 
                     <figure>
-                        <Image alt="Half Life Alyx Cover" src={"https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Half-Life_Alyx_Cover_Art.jpg/250px-Half-Life_Alyx_Cover_Art.jpg"}
-                            height={300} width={100} className="block md:hidden" />
-                        <Image alt="Half Life Alyx Cover" src={"https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Half-Life_Alyx_Cover_Art.jpg/250px-Half-Life_Alyx_Cover_Art.jpg"}
-                            height={600} width={200} className="hidden md:block" />
+                        <Image
+                            alt="Half Life Alyx Cover"
+                            src={"https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Half-Life_Alyx_Cover_Art.jpg/250px-Half-Life_Alyx_Cover_Art.jpg"}
+                            height={600}
+                            width={400}
+                            sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 160px"
+                            className="w-full max-w-55 h-auto"
+                        />
                         <figcaption>Half Life Alyx</figcaption>
                     </figure>
 
                     <figure>
-                        <Image alt="Beat Saber Cover" src={"https://upload.wikimedia.org/wikipedia/en/5/58/Beat_Saber_logo.jpg"}
-                            height={300} width={100} className="block md:hidden" />
-                        <Image alt="Beat Saber Cover" src={"https://upload.wikimedia.org/wikipedia/en/5/58/Beat_Saber_logo.jpg"}
-                            height={600} width={200} className="hidden md:block" />
+                        <Image
+                            alt="Beat Saber Cover"
+                            src={"https://upload.wikimedia.org/wikipedia/en/5/58/Beat_Saber_logo.jpg"}
+                            height={600}
+                            width={400}
+                            sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 160px"
+                            className="w-full max-w-55 h-auto"
+                        />
                         <figcaption>Beat Saber</figcaption>
                     </figure>
                 </article>
@@ -125,8 +149,14 @@ export default function Hobbies() {
                         and little side projects just for fun. And I quite mix all of that with work so I end up with tons of ideas and sometime I end up tired too soon.
                     </p>
                     <figure>
-                        <Image src={"/myDesk.jpg"} width={700} height={500} alt="My desktop" className="block md:hidden" />
-                        <Image src={"/myDesk.jpg"} width={1000} height={800} alt="My desktop" className="hidden md:block" />
+                        <Image
+                            src={"/myDesk.jpg"}
+                            width={1000}
+                            height={800}
+                            sizes="(min-width: 1024px) 720px, (min-width: 640px) 560px, 320px"
+                            alt="My desktop"
+                            className="w-full max-w-180 h-auto"
+                        />
                     </figure>
 
                 </article>

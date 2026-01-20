@@ -40,12 +40,15 @@ export default function RootLayout({
             Junlab
           </h1>
           <figure className="flex flex-col items-center justify-center gap-4">
-            <Image src={"/logo.png"} alt={"Junlab's logo"} width={300} height={300} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
-            block md:hidden lg:hidden" />
-            <Image src={"/logo.png"} alt={"Junlab's logo"} width={700} height={750} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
-            hidden md:block lg:hidden" />
-            <Image src={"/logo.png"} alt={"Junlab's logo"} width={500} height={550} className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
-            hidden lg:block" />
+            <Image
+              src={"/logo.png"}
+              alt={"Junlab's logo"}
+              width={700}
+              height={700}
+              sizes="(min-width: 1024px) 520px, (min-width: 768px) 420px, (min-width: 640px) 320px, 240px"
+              className="bg-linear-to-b from-slate-500 via-gray-500 to-zinc-100 rounded-4xl border-black border-2
+              w-full max-w-60 sm:max-w-[320px] md:max-w-105 lg:max-w-130 h-auto"
+            />
             <span className="typer">
               <TypewriterText texts={texts} />
             </span>

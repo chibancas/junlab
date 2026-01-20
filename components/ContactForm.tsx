@@ -14,7 +14,7 @@ export default function ContactForm() {
 
     return (
         <form action={action}
-            className='grid grid-cols-1 w-[75vw] bg-gray-300 mx-auto p-3 text-2xl gap-3 border-2 border-gray-400 rounded-lg'>
+            className='grid grid-cols-1 w-full max-w-2xl bg-gray-300 mx-auto p-3 text-xl sm:text-2xl gap-3 border-2 border-gray-400 rounded-lg'>
             <input type="text" name="name" id="name" placeholder='Type your name here' maxLength={150} minLength={3} required />
             <input type="email" name="email" id="email" placeholder='Type your email here' maxLength={250} minLength={10} required />
             <textarea name="message" id="message" placeholder='Type your message here' maxLength={800} minLength={10} required />
