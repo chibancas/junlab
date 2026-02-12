@@ -33,7 +33,7 @@ export default function ContactForm() {
 
             <div id="data-agreement-container" className="flex flex-row flex-wrap items-center justify-center text-center">
                 <label htmlFor="data-agreement" className='w-full'>
-                    By checking this box you agree to let me store your data for contact purposes.
+                    Checking this box you agree to let me store your data for contact purposes.
                 </label>
 
                 <span>

@@ -43,7 +43,7 @@ export default function Hobbies() {
                         I play both flat-screen and VR games.
                         Sometimes I dive into story-driven worlds, other times I just relax driving,
                         flying or exploring open maps.
-                        Stories like those showed inthe Unchated, Tom Raides games or Batman Arkham sagas are awesome.
+                        Stories like those showed in the Unchated, Tom Raider games or Batman Arkham sagas are awesome.
                         Also I dive too much in worlds like the RDR maps, Forza Horizon worlds. They quite are my window to the world due to my vision issue.
                     </p>
 
@@ -127,7 +127,7 @@ export default function Hobbies() {
                     <p>
                         Music is always with me, especially flamenco, jazz blends, pop and experimental covers.
                         I listen to it everywhere: working, walking or relaxing.
-                        Somehow music boosted my way of learning english. Singers like Adele or bands like Queen are in my top 5 listened.
+                        Somehow music boosted my way of learning english. Singers like Adele or bands like Queen are in my top 5.
                     </p>
 
                     <p className="py-4">

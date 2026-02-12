@@ -141,6 +141,7 @@ export default function Projects() {
                         </li>
                     </ul>
                 </article>
+
                 <article>
                     <h2>Custom Mouse Button Mapping on Linux</h2>
 
@@ -182,9 +183,92 @@ export default function Projects() {
 
                     <p>Sadly I deleted the Linux system where I had all settted up so yo&apos;ll have to trust me. ;) </p>
                 </article>
+
+                <article>
+                    <h2>Private VPN with WireGuard & AdGuard Home</h2>
+
+                    <p>
+                        One of my most useful infrastructure projects is a private VPN built using
+                        WireGuard, combined with AdGuard Home for network-wide ad and tracker blocking.
+                        The goal was simple: have a secure tunnel to my VPS and full control over DNS.
+                    </p>
+
+                    <p>
+                        WireGuard acts as the VPN backbone. It is lightweight, fast and easy to audit.
+                        I use it to securely access my services, route traffic when needed and connect
+                        multiple devices without exposing them directly to the internet.
+                    </p>
+
+                    <p>
+                        On top of that, AdGuard Home runs as the DNS resolver for the VPN clients.
+                        This allows me to block ads, trackers and unwanted domains at DNS level,
+                        regardless of the device or application.
+                    </p>
+
+                    <ul>
+                        <li>
+                            WireGuard running inside Docker as a private VPN server.
+                        </li>
+                        <li>
+                            AdGuard Home handling DNS queries for VPN clients.
+                        </li>
+                        <li>
+                            Full visibility of connected clients and their DNS activity.
+                        </li>
+                        <li>
+                            Separation between public services and private infrastructure.
+                        </li>
+                    </ul>
+
+                        <Image src={"/adguard.png"} alt={"AdGuard Home Dashboard"} height={400} width={600} />
+                    
+                    <p>
+                        This setup gave me a much better understanding of networking concepts such as
+                        routing, NAT, DNS resolution and client identification.
+                        It also became a core tool in my daily workflow.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>Self-Hosted Password Manager with Vaultwarden</h2>
+
+                    <p>
+                        Vaultwarden is my self-hosted password manager.
+                        It is a lightweight, open-source implementation compatible with Bitwarden clients,
+                        running entirely on my own VPS.
+                    </p>
+
+                    <p>
+                        I wanted full control over my credentials without relying on third-party cloud services.
+                        Vaultwarden allows me to securely store passwords, notes and secrets,
+                        while keeping the data under my own infrastructure.
+                    </p>
+
+                    <p>
+                        The service runs inside Docker and is exposed through a reverse proxy with HTTPS.
+                        All traffic is encrypted, and access is restricted using strong authentication.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Self-hosted Vaultwarden instance using Docker.
+                        </li>
+                        <li>
+                            Encrypted storage for passwords and secure notes.
+                        </li>
+                        <li>
+                            Access through official Bitwarden clients (desktop, mobile, browser).
+                        </li>
+                    </ul>
+
+                    <p>
+                        This project reinforced my understanding of security trade-offs,
+                        secret management and responsible self-hosting.
+                        It is a practical example of choosing control and privacy over convenience.
+                    </p>
+                </article>
+
             </section>
-
-
         </main>
     )
 }

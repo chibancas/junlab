@@ -33,16 +33,19 @@ export default function Contact() {
                 </h2>
 
                 <nav className='nav'>
+                    <Link href={'mailto:juanjose@junlab.es?subject=Contact%20Form%20%7C%20Junlab&body=Hey%2C%20I%20just%20saw%20your%20web%20and%20I%27d%20like%20to%20get%20in%20touch.'} className='w-25 col-span-2 md:col-span-1'>
+                        <Mail />
+                        <span>
+                            Email
+                            <br />
+                            juanjose@junlab.es
+                        </span>
+                    </Link>
                     <Link href={'https://www.linkedin.com/in/juan-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez-16b8a52a8/'}>
                         <BriefcaseBusiness />
                         <span>
                             LinkedIn
-                        </span>
-                    </Link>
-                    <Link href={'mailto:jj.ff.tecno@gmail.com?subject=Contact%20Form%20%7C%20Junlab&body=Hey%2C%20I%20just%20saw%20your%20web%20and%20I%27d%20like%20to%20get%20in%20touch.'} className='w-25'>
-                        <Mail />
-                        <span>
-                            Gmail
+                            <br />
                         </span>
                     </Link>
                     <Link href={'https://www.youtube.com/@chibancas'}>
@@ -51,7 +54,7 @@ export default function Contact() {
                             Youtube
                         </span>
                     </Link>
-                    <Link href={'https://github.com/chibancas/'}>
+                    <Link href={'https://github.com/chibancas/'}  className="col-span-2 md:col-span-1">
                         <GitBranch />
                         <span>
                             Github
